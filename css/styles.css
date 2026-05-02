@@ -1,0 +1,50 @@
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --gold-main: #d4af37;
+  --gold-light: #f9e2af;
+  --text-white: #e0e0e0; /* Un blanco roto para no cansar la vista sobre el negro */
+  --cinzel: 'Cinzel Decorative';
+}
+
+body{
+    font-family: 'Georgia', sans-serif;
+    color: #e0e0e0;
+}
+.holder{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+/*Headeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer*/
+
+header{
+    background-color: var(--bg-primary);
+}
+h1{
+    color: var(--gold-main);
+    font-family: var(--cinzel) , sans-serif;
+    width: 75%  ;
+    font-size: 75px;
+    margin: auto;
+}
+
+.logo{
+    width: 25%;
+}
+
+
+header > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+nav{
+    width: 100%;
+}
+
+/*Fin Headeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer*/
