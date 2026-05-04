@@ -47,4 +47,145 @@ nav{
     width: 100%;
 }
 
+/*Estilos navbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar*/
+
+/* Forzar el fondo transparente para que se vea el negro del header */
+.navbar.bg-body-tertiary {
+  background-color: transparent !important; 
+}
+
+/* Estilo de los enlaces (Specia, Showroom, Productos, Contactanos) */
+.navbar-nav .nav-link {
+  color: var(--color-dorado-claro) !important;
+  font-family: var(--fuente-texto);
+  font-weight: 500;
+  text-transform: uppercase; /* Letras en mayúscula para más elegancia */
+  letter-spacing: 1px;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto Hover (al pasar el mouse) en los enlaces */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--color-dorado) !important;
+  transform: scale(1.05); /* Un pequeño aumento */
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4); /* Brillo dorado */
+}
+
+/* --- Estilos del Menú Desplegable (Dropdown) --- */
+.dropdown-menu {
+  background-color: var(--color-negro);
+  border: 1px solid var(--color-dorado);
+}
+
+.dropdown-item {
+  color: var(--color-dorado-claro);
+  font-family: var(--fuente-texto);
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-dorado);
+  color: var(--color-negro); /* Invierte los colores al hacer hover */
+}
+
+/* --- Estilos para la barra de búsqueda --- */
+.form-control {
+  background-color: transparent;
+  border: 1px solid var(--color-dorado);
+  color: var(--color-dorado-claro);
+}
+
+/* Cambiar el color del placeholder (texto de ayuda) */
+.form-control::placeholder {
+  color: rgba(243, 229, 171, 0.5); /* Dorado claro transparente */
+}
+
+.form-control:focus {
+  background-color: rgba(212, 175, 55, 0.1);
+  border-color: var(--color-dorado);
+  color: var(--color-dorado-claro);
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+/* Estilo del botón de búsqueda (Lupa) */
+.btn-outline-success {
+  color: var(--color-dorado);
+  border-color: var(--color-dorado);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--color-dorado);
+  color: var(--color-negro);
+  border-color: var(--color-dorado);
+}
+
+/* Cambiar el color del icono SVG de la lupa a dorado */
+.btn-outline-success svg {
+    fill: currentColor; 
+}
+
+/* --- Estilos para el botón hamburguesa (Mobile) --- */
+.navbar-toggler {
+  border-color: var(--color-dorado);
+}
+
+/* Cambiamos el icono SVG por defecto a uno de color dorado */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212, 175, 55, 1%29' stroke-linecap='round' stroke-miterlimit='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+  outline: none;
+}
+
+/* --- Media Query para adaptar el Header en celulares --- */
+@media (max-width: 991px) {
+  .holder {
+    flex-direction: row; /* Apila el logo, el título y el menú */
+    text-align: center;
+  }
+  
+  .holder img.logo {
+    margin-right: 0;
+    width: 25%;
+  }
+  .holder h1 {
+    width: 50%;
+  }
+
+  .navbar {
+    width: 25%;
+  }
+  
+  /* Transformamos el menú en un Popover flotante */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Lo ubica justo debajo del botón hamburguesa */
+    left: -80px;
+    right: 10px;
+    z-index: 1000; /* Asegura que flote por encima del contenido de tu <main> */
+    
+    background-color: var(--bg-primary);
+    padding: 20px;
+    border: 1px solid var(--gold-main);
+    border-radius: 12px; /* Bordes un poco más redondeados */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7); /* Sombra para el efecto flotante */
+    margin-top: 15px; /* Separación del botón */
+  }
+
+  /* Separamos un poco los links cuando están en el popover */
+  .navbar-nav .nav-link {
+    margin: 10px 0; 
+  }
+}
+/*Media Querie para cuando se juntan demasiado los elementos*/
+@media(max-width: 500px){
+    .holder h1{
+        margin: 0;
+    }
+}
+
+
 /*Fin Headeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer*/
