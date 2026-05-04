@@ -189,3 +189,107 @@ nav{
 
 
 /*Fin Headeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer*/
+
+/*main*/
+/* Variables de Color */
+:root {
+  --color-gold: #D4AF37; /* Dorado elegante */
+  --color-black: #0a0a0a;
+  --color-dark-gray: #1a1a1a;
+}
+
+/* Base */
+body {
+  background-color: var(--color-black);
+  color: #ffffff;
+}
+
+/* Clases Utilitarias para Tipografías */
+.font-cinzel {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Clases Utilitarias de Color */
+.text-gold {
+  color: var(--color-gold) !important;
+}
+
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark-gray) !important;
+}
+
+.border-gold {
+  border: 1px solid var(--color-gold);
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 70vh;
+  /* Podés agregar una imagen de fondo de un perfume cambiando la URL */
+  background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95)), url('https://www.monarca.com.py/cdn/shop/files/lattafa-his-confession-100-ml-1.jpg?v=1768401018&width=1946') center/cover no-repeat;
+  border-bottom: 2px solid var(--color-gold);
+}
+
+/* Botones Personalizados */
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  font-weight: 700;
+  border: 2px solid var(--color-gold);
+}
+
+.btn-gold:hover {
+  background-color: transparent;
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+/*fin Maiiiiiinnnnn*/
+
+
+/*Main Showroom*/
+/* --- SHOWROOM --- */
+.showroom-header {
+  /* Separación para que no quede pegado a la barra de navegación */
+  margin-top: 2rem; 
+}
+
+/* Efecto elegante para las imágenes de la galería */
+.gallery-img {
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+  filter: grayscale(30%); /* Le da un tono más sobrio inicialmente */
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03); /* Se agranda un poquito */
+  filter: grayscale(0%); /* Vuelve al color original */
+  box-shadow: 0 15px 25px rgba(212, 175, 55, 0.2) !important;
+  z-index: 10;
+  position: relative;
+}
+
+/* Ajuste utilitario para asegurar el borde dorado abajo */
+.border-bottom.border-gold {
+  border-bottom: 1px solid var(--color-gold) !important;
+}

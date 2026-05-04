@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!--Estilos-->
+    <link
+      rel="stylesheet"
+      href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\css\normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\css\styles.css"
+    />
+
+    <!--Tipografia-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <!---->
+
+    <title>Specia</title>
+  </head>
+  <body>
+    <header>
+      <div id="header" class="holder">
+        <img
+          class="logo"
+          src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\Logo_Specia-removebg-preview.png"
+          alt="Logo Specia"
+        />
+        <h1>Specia</h1>
+        <!--Barra de Navegacion-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <!-- Este es el BOTÓN HAMBURGUESA que faltaba -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\index.html"
+                    >Specia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\paginas\showroom.html"
+                    >Showroom</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                    <li><a class="dropdown-item" href="#">Decants</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contactanos</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!--Fin barra de navegacion-->
+      </div>
+    </header>
+
+    <main>
+      <!-- Cabecera del Showroom -->
+      <section
+        class="showroom-header text-center py-5 bg-black border-bottom border-gold"
+      >
+        <div class="container pt-5 pb-3">
+          <h2 class="display-4 font-cinzel text-gold mb-3">Nuestro Showroom</h2>
+          <p class="lead font-montserrat text-light mb-0">
+            Vení a descubrir tu próxima fragancia firma en persona.
+          </p>
+        </div>
+      </section>
+
+      <!-- Información y Reserva -->
+      <section class="showroom-info py-5 bg-dark">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <!-- Texto e info de contacto -->
+            <div class="col-lg-6">
+              <h3 class="font-cinzel text-gold mb-4">
+                Viví la Experiencia Specia
+              </h3>
+              <p
+                class="font-montserrat text-light mb-4"
+                style="line-height: 1.7"
+              >
+                Sabemos que comprar un perfume a ciegas es un desafío. Por eso,
+                te invitamos a nuestro espacio exclusivo. Vení a testear
+                nuestros decants, analizar la evolución de las notas en tu piel
+                y recibir asesoramiento personalizado sobre rendimiento y
+                tiempos de maceración.
+              </p>
+
+              <ul class="list-unstyled font-montserrat text-light mb-5">
+                <li class="mb-3">
+                  <strong class="text-gold">📍 Ubicación:</strong> Berazategui,
+                  Buenos Aires. (Dirección exacta al agendar)
+                </li>
+                <li class="mb-3">
+                  <strong class="text-gold">🕒 Horarios:</strong> Lunes a
+                  Sábados de 10:00 a 19:00 hs.
+                </li>
+                <li class="mb-3">
+                  <strong class="text-gold">✨ Modalidad:</strong> Con cita
+                  previa para brindarte la mejor atención.
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-gold btn-lg font-montserrat"
+                >Agendar Visita por WhatsApp</a
+              >
+            </div>
+
+            <!-- Imagen del lugar -->
+            <div class="col-lg-6">
+              <div class="p-2 border-gold bg-black shadow-lg rounded">
+                <!-- Reemplazá el src con una foto de tu exhibidor de perfumes -->
+                <img
+                  src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\Gemini_Generated_Image_64xyqb64xyqb64xy.png"
+                  alt="Interior del Showroom Specia"
+                  class="img-fluid rounded"
+                  style="opacity: 0.9"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galería Rápida -->
+      <section class="showroom-gallery py-5 bg-black">
+        <div class="container py-4">
+          <h3 class="text-center font-cinzel text-gold mb-5">
+            Un Vistazo al Espacio
+          </h3>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <!-- Asegurate de tener imágenes en tu carpeta img/ -->
+              <img
+                src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\Gemini_Generated_Image_64xyqb64xyqb64xy.png"
+                alt="Exhibición Lattafa"
+                class="img-fluid border-gold rounded shadow-sm gallery-img w-100 object-fit-cover"
+                style="height: 300px"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\Gemini_Generated_Image_xo0xlhxo0xlhxo0x.png"
+                alt="Decants Preparados"
+                class="img-fluid border-gold rounded shadow-sm gallery-img w-100 object-fit-cover"
+                style="height: 300px"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://www.monarca.com.py/cdn/shop/files/lattafa-his-confession-100-ml-1.jpg?v=1768401018&width=1946"
+                alt="Maison Alhambra"
+                class="img-fluid border-gold rounded shadow-sm gallery-img w-100 object-fit-cover"
+                style="height: 300px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-light border-top border-gold pt-5 pb-3 mt-5">
+      <div class="container px-4">
+        <div class="row gy-4">
+          <!-- Columna 1: Marca -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="font-cinzel text-gold mb-3">Specia</h5>
+            <p
+              class="font-montserrat small text-secondary"
+              style="line-height: 1.6"
+            >
+              Especialistas en perfumería árabe y fragancias de nicho. Llevamos
+              la esencia de Medio Oriente directo a tu piel con la mejor
+              calidad.
+            </p>
+          </div>
+
+          <!-- Columna 2: Explorar -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="font-cinzel text-gold mb-3">Explorar</h5>
+            <ul class="list-unstyled font-montserrat small">
+              <li class="mb-2">
+                <a
+                  href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\paginas\showroom.html"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Showroom</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Perfumes Importados</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Catálogo de Decants</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Guía de Maceración y Notas</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Contacto y Redes -->
+          <div class="col-lg-4 col-md-12">
+            <h5 class="font-cinzel text-gold mb-3">Contacto</h5>
+            <ul class="list-unstyled font-montserrat small text-secondary">
+              <li class="mb-2">📍 Berazategui, Buenos Aires, Argentina</li>
+              <li class="mb-2">✉️ contacto@specia.com.ar</li>
+              <li class="mb-2">📱 +54 9 11 1234-5678</li>
+            </ul>
+
+            <!-- Redes Sociales -->
+            <div class="mt-4">
+              <a
+                href="#"
+                class="text-gold me-3 text-decoration-none fw-bold footer-icon"
+                >IG</a
+              >
+              <a
+                href="#"
+                class="text-gold me-3 text-decoration-none fw-bold footer-icon"
+                >TK</a
+              >
+              <a
+                href="#"
+                class="text-gold text-decoration-none fw-bold footer-icon"
+                >WA</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5">
+          <div class="col-12 text-center border-top border-dark pt-4">
+            <p class="font-montserrat small text-secondary mb-0">
+              &copy; 2026 Specia. Todos los derechos reservados.
+            </p>
+            <p
+              class="font-montserrat text-muted mt-1"
+              style="font-size: 0.75rem"
+            >
+              Desarrollado por Santiago
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
