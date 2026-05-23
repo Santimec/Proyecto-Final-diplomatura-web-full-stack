@@ -1,0 +1,52 @@
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --gold-main: #d4af37;
+  --gold-light: #f9e2af;
+  --text-white: #e0e0e0; /* Un blanco roto para no cansar la vista sobre el negro */
+  --cinzel: "Cinzel Decorative";
+}
+
+#contenedorTotal {
+  display: flex;
+  flex-wrap: wrap; /* 1. CRUCIAL: Permite que los elementos bajen a la siguiente línea */
+  gap: 20px; /* Opcional: Da una separación limpia entre los elementos */
+  width: 80%;
+  max-width: 1200px; /* O el ancho máximo que prefieras para tu web */
+  margin-left: auto; /* Empuja desde la izquierda hacia el centro */
+  margin-right: auto;
+}
+
+#titulo-contacto {
+  flex-basis: 100%; /* 2. Obliga al título a ocupar todo el ancho disponible arriba */
+  text-align: center;
+}
+
+#contenedor-formulario-contacto {
+  /* 3. Se reparten el espacio restando el gap si usás calc(), o con porcentajes */
+  flex: 1 1 calc(50% - 10px);
+  /* Nota: 'flex: 1 1 50%' también funciona, pero con calc() manejás mejor los márgenes */
+}
+
+#mapa-contacto {
+  flex: 1 1 calc(50% - 10px);
+  flex-wrap: wrap;
+}
+
+.contendor-contacto {
+  background-color: var(--bg-primary);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--gold-main);
+  color: var(--gold-main);
+}
+
+.contacto-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--gold-main);
+  border-radius: 4px;
+  background-color: var(--bg-secondary);
+  color: var(--gold-main);
+}

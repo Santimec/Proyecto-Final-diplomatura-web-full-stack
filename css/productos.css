@@ -1,0 +1,117 @@
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --gold-main: #d4af37;
+  --gold-light: #f9e2af;
+  --text-white: #e0e0e0; /* Un blanco roto para no cansar la vista sobre el negro */
+  --cinzel: "Cinzel Decorative";
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#titulo {
+  margin-top: 35px;
+  color: var(--gold-main);
+  font-family: var(--cinzel);
+}
+
+/**/
+/* 1. Contenedor principal (opcional, por si querés darle un ancho máximo a la sección) */
+#filtrosybusqueda {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 2. El Formulario: Activa Flexbox y alinea los dos bloques principales */
+#formBusqueda {
+  display: flex;
+  gap: 20px; /* Espacio de separación entre la barra y los filtros */
+  align-items: center; /* Alinea verticalmente al centro */
+  width: 100%;
+}
+
+/* 3. La Barra de Búsqueda (30%) */
+#barraBusqueda {
+  flex: 0 0 30%; /* No crece, no se achica, base exacta del 30% */
+  display: flex;
+  align-items: center;
+  position: relative; /* Para posicionar el icono de la lupa si es necesario */
+}
+
+/* Hacemos que el input de texto ocupe el 100% de su contenedor (el 30% del formulario) */
+#barraBusqueda input[type="text"] {
+  width: 100%;
+  padding: 10px 12px 10px 35px; /* Espacio extra a la izquierda para el icono */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  background-color: var(--bg-secondary);
+  color: var(--gold-main);
+}
+#barraBusqueda svg {
+  width: 20%;
+  position: absolute;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  fill: var(--gold-main);
+}
+
+/* 4. El contenedor de Filtros (70%) */
+#filtros {
+  flex: 0 0 70%; /* No crece, no se achica, base exacta del 70% */
+  display: flex;
+  gap: 10px; /* Espacio entre cada uno de los select */
+}
+
+/* Hacemos que los select se repartan equitativamente el espacio dentro del 70% */
+#filtros select {
+  flex: 1; /* Cada select crece por igual para ocupar todo el 70% */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: var(--bg-secondary);
+  color: var(--gold-main);
+  cursor: pointer;
+  outline: none;
+}
+#boton-filtro {
+  /* Cada select crece por igual para ocupar todo el 70% */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+  outline: none;
+  color: var(--gold-main);
+}
+
+/* ---Estilos para los productos --- */
+
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#productos .card {
+  flex: 0 0 calc(25% - 20px); /* 3 productos por fila con espacio entre ellos */
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--gold-main);
+  border-radius: 8px;
+  color: var(--text-white);
+}
+.card-title {
+  color: var(--gold-main);
+}

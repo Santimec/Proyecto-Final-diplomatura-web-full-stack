@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!--Estilos-->
+    <link
+      rel="stylesheet"
+      href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\css\normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\css\styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\css\productos.css"
+    />
+
+    <!--Tipografia-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <!---->
+
+    <title>Specia</title>
+  </head>
+  <body>
+    <header>
+      <div id="header" class="holder">
+        <img
+          class="logo"
+          src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\Logo_Specia-removebg-preview.png"
+          alt="logo Specia"
+        />
+        <h1>Specia</h1>
+        <!--Barra de Navegacion-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <!-- Este es el BOTÓN HAMBURGUESA que faltaba -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\index.html"
+                    >Specia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\paginas\showroom.html"
+                    >Showroom</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\paginas\productos.html"
+                    >Productos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\paginas\contacto.html"
+                    >Contactanos</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!--Fin barra de navegacion-->
+      </div>
+    </header>
+    <main>
+      <div id="titulo">
+        <h2>Seccion de Productos || Decants y Perfumes</h2>
+      </div>
+      <div id="filtrosybusqueda">
+        <form action="" id="formBusqueda">
+          <div id="barraBusqueda">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+            <input type="text" placeholder="Buscar productos..." />
+          </div>
+          <div id="filtros">
+            <select name="tipoProducto" id="tipoProducto">
+              <option disabled selected>Producto</option>
+              <option value="decant">Decant</option>
+              <option value="perfume">Perfume</option>
+            </select>
+            <!--Marca genero y precio-->
+            <select name="marca" id="marca">
+              <option disabled selected>Marca</option>
+              <option value="marca1">Armaf</option>
+              <option value="marca2">Afnan</option>
+              <option value="marca3">Lataffa</option>
+            </select>
+            <select name="genero" id="genero">
+              <option disabled selected>Genero</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+            </select>
+            <select name="precio" id="precio">
+              <option disabled selected>Precio</option>
+              <option value="bajo">40.000-60.000</option>
+              <option value="medio">60.000-100.000</option>
+              <option value="alto">100.000+</option>
+            </select>
+            <button type="button" id="boton-filtro">Filtrar</button>
+          </div>
+        </form>
+      </div>
+      <div id="productos">
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\asad lattafa.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lattafa Asad</h5>
+            <p class="card-text">
+              Fragancia intensa y especiada con notas de pimienta negra, café y
+              vainilla. Un clásico semi-formal imponente..
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\emper 83.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Emper Elixir 88 (Stalion 88)</h5>
+            <p class="card-text">
+              Un aroma potente y amaderado con una proyección destacada y
+              excelente fijación en piel.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\khamraw lattafa.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lattafa Khamrah Qahwa</h5>
+            <p class="card-text">
+              Una bomba dulce y oriental con un toque adictivo de café, canela y
+              praliné. Perfecto para la noche.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\lionheart armaf.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Armaf Lionheart</h5>
+            <p class="card-text">
+              Fragancia versátil, fresca y aromática con notas limpias de
+              lavanda y un fondo masculino marcado.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\precieux armaf.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Club de Nuit Precieux</h5>
+            <p class="card-text">
+              Extracto de perfume chipre ambarado, elegante y de alta
+              concentración. Una propuesta exclusiva y moderna.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\asad decant.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lattafa Asad Decant</h5>
+            <p class="card-text">
+              Fragancia intensa y especiada con notas de pimienta negra, café y
+              vainilla. Un clásico semi-formal imponente..
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\emper 88 decant.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Emper Elixir 88 Decant</h5>
+            <p class="card-text">
+              Un aroma potente y amaderado con una proyección destacada y
+              excelente fijación en piel.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\khamraw decant.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lattafa Khamrah Qahwa Decant</h5>
+            <p class="card-text">
+              Una bomba dulce y oriental con un toque adictivo de café, canela y
+              praliné. Perfecto para la noche
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\lionheart decant.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Armaf Lionheart Decant</h5>
+            <p class="card-text">
+              Fragancia versátil, fresca y aromática con notas limpias de
+              lavanda y un fondo masculino marcado.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\img\fotosPerfumes\precieux decant.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Club de Nuit Precieux Decant</h5>
+            <p class="card-text">
+              Extracto de perfume chipre ambarado, elegante y de alta
+              concentración. Una propuesta exclusiva y moderna.
+            </p>
+            <a href="#" class="btn btn-outline-gold font-montserrat">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-black text-light border-top border-gold pt-5 pb-3 mt-5">
+      <div class="container px-4">
+        <div class="row gy-4">
+          <!-- Columna 1: Marca -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="font-cinzel text-gold mb-3">Specia</h5>
+            <p
+              class="font-montserrat small text-secondary"
+              style="line-height: 1.6"
+            >
+              Especialistas en perfumería árabe y fragancias de nicho. Llevamos
+              la esencia de Medio Oriente directo a tu piel con la mejor
+              calidad.
+            </p>
+          </div>
+
+          <!-- Columna 2: Explorar -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="font-cinzel text-gold mb-3">Explorar</h5>
+            <ul class="list-unstyled font-montserrat small">
+              <li class="mb-2">
+                <a
+                  href="C:\Users\santi\Documents\DIPLOMATURA DESARROLLO WEB\Modulo 2\Sitio integrador\paginas\showroom.html"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Showroom</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Perfumes Importados</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Catálogo de Decants</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link"
+                  >Guía de Maceración y Notas</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Contacto y Redes -->
+          <div class="col-lg-4 col-md-12">
+            <h5 class="font-cinzel text-gold mb-3">Contacto</h5>
+            <ul class="list-unstyled font-montserrat small text-secondary">
+              <li class="mb-2">📍 Berazategui, Buenos Aires, Argentina</li>
+              <li class="mb-2">✉️ contacto@specia.com.ar</li>
+              <li class="mb-2">📱 +54 9 11 1234-5678</li>
+            </ul>
+
+            <!-- Redes Sociales -->
+            <div class="mt-4">
+              <a
+                href="#"
+                class="text-gold me-3 text-decoration-none fw-bold footer-icon"
+                >IG</a
+              >
+              <a
+                href="#"
+                class="text-gold me-3 text-decoration-none fw-bold footer-icon"
+                >TK</a
+              >
+              <a
+                href="#"
+                class="text-gold text-decoration-none fw-bold footer-icon"
+                >WA</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5">
+          <div class="col-12 text-center border-top border-dark pt-4">
+            <p class="font-montserrat small text-secondary mb-0">
+              &copy; 2026 Specia. Todos los derechos reservados.
+            </p>
+            <p
+              class="font-montserrat text-muted mt-1"
+              style="font-size: 0.75rem"
+            >
+              Desarrollado por Santiago
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
